@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chai Culture | Brew the Royal Tradition</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --gold:#C9A24D;
+    --brown:#3A2A1E;
+    --cream:#FAF7F2;
+    --dark:#2B1D14;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:'Inter',sans-serif;
+    background:var(--cream);
+    color:var(--dark);
+}
+
+/* Announcement */
+.announcement {
+    background:var(--brown);
+    color:var(--gold);
+    text-align:center;
+    padding:10px;
+    letter-spacing:1px;
+    font-size:14px;
+}
+
+/* Header */
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.logo {
+    font-family:'Playfair Display',serif;
+    font-size:28px;
+    color:var(--gold);
+    letter-spacing:2px;
+}
+
+nav a {
+    margin-left:25px;
+    text-decoration:none;
+    color:var(--brown);
+    font-weight:500;
+}
+
+nav a:hover {
+    color:var(--gold);
+}
+
+/* Hero */
+.hero {
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1 {
+    font-family:'Playfair Display',serif;
+    font-size:52px;
+    color:var(--brown);
+}
+
+.hero p {
+    margin-top:15px;
+    font-size:18px;
+    color:#5a4a3c;
+}
+
+.hero button {
+    margin-top:35px;
+    padding:15px 40px;
+    background:var(--gold);
+    border:none;
+    color:var(--brown);
+    letter-spacing:2px;
+    cursor:pointer;
+}
+
+/* Products */
+.products {
+    padding:70px 50px;
+    text-align:center;
+}
+
+.products h2 {
+    font-family:'Playfair Display',serif;
+    font-size:38px;
+    margin-bottom:50px;
+}
+
+.product-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:35px;
+}
+
+.product {
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.06);
+    transition:transform 0.3s;
+}
+
+.product:hover {
+    transform:translateY(-6px);
+}
+
+.product img {
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.product h3 {
+    font-family:'Playfair Display',serif;
+}
+
+.price {
+    color:var(--gold);
+    font-weight:600;
+    margin-top:10px;
+}
+
+/* Why Section */
+.why {
+    background:#fff;
+    padding:70px 20px;
+    text-align:center;
+}
+
+.why h2 {
+    font-family:'Playfair Display',serif;
+    margin-bottom:40px;
+}
+
+.why-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    max-width:900px;
+    margin:auto;
+}
+
+.why-box {
+    padding:25px;
+}
+
+.why-box h4 {
+    color:var(--gold);
+    margin-bottom:10px;
+}
+
+/* About */
+.about {
+    padding:70px 20px;
+    text-align:center;
+}
+
+.about h2 {
+    font-family:'Playfair Display',serif;
+    margin-bottom:20px;
+}
+
+.about p {
+    max-width:750px;
+    margin:auto;
+    line-height:1.7;
+    color:#5b4a3d;
+}
+
+/* Contact */
+.contact {
+    background:#fff;
+    padding:70px 20px;
+    text-align:center;
+}
+
+.contact h2 {
+    font-family:'Playfair Display',serif;
+    margin-bottom:15px;
+}
+
+.contact p {
+    color:#5a4a3c;
+}
+
+/* Footer */
+footer {
+    background:var(--brown);
+    color:var(--gold);
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+footer img {
+    height: 45px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="announcement">
+✨ Coming Soon – Experience the Royal Art of Chai ✨
+</div>
+
+<header>
+<div class="logo">CHAI CULTURE</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Shop</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Brew the Royal Tradition</h1>
+<p>Where Indian heritage meets refined modern indulgence.</p>
+<button>EXPLORE COLLECTION</button>
+</section>
+
+<section class="products">
+<h2>Signature Blends</h2>
+<div class="product-grid">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574" alt="">
+<h3>Royal Cardamom Bloom</h3>
+<p>Smooth Assam tea infused with hand-crushed green cardamom.</p>
+<div class="price">$48</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="">
+<h3>Masala Heritage Fusion</h3>
+<p>A warming blend of bold spices inspired by royal kitchens.</p>
+<div class="price">$48</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9" alt="">
+<h3>Zesty Ginger Elixir</h3>
+<p>A vibrant ginger-forward chai to awaken the senses.</p>
+<div class="price">$48</div>
+</div>
+
+</div>
+</section>
+
+<section class="why">
+<h2>Why Chai Culture</h2>
+<div class="why-grid">
+<div class="why-box">
+<h4>Royal Recipes</h4>
+<p>Inspired by centuries-old Indian chai traditions.</p>
+</div>
+<div class="why-box">
+<h4>Premium Ingredients</h4>
+<p>Only the finest tea leaves and hand-selected spices.</p>
+</div>
+<div class="why-box">
+<h4>Crafted Elegance</h4>
+<p>Designed for refined, mindful tea moments.</p>
+</div>
+</div>
+</section>
+
+<section class="about">
+<h2>Our Story</h2>
+<p>
+Chai Culture celebrates the ritual of Indian tea through a lens of royalty and warmth.
+Each blend honors tradition while elevating everyday moments into elegant experiences.
+</p>
+</section>
+
+<section class="contact">
+<h2>Get in Touch</h2>
+<p>Email: hello@chaiculture.com</p>
+<p>Phone: +91 98765 43210</p>
+</section>
+
+<footer>
+    <p>© Chai Culture — Brew the Royal Tradition</p>
+    <img src="images/chai-culture-logo.jpg" alt="Chai Culture Logo">
+</footer>
+
+
+</body>
+</html>
+
