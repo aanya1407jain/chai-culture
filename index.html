@@ -220,6 +220,10 @@ footer {
 footer img {
     height: 45px;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 </style>
 </head>
@@ -233,20 +237,20 @@ footer img {
 <header>
 <div class="logo">CHAI CULTURE</div>
 <nav>
-<a href="#">Home</a>
-<a href="#">Shop</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#shop">Shop</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 <h1>Brew the Royal Tradition</h1>
 <p>Where Indian heritage meets refined modern indulgence.</p>
 <button>EXPLORE COLLECTION</button>
 </section>
 
-<section class="products">
+<section class="products" id="shop">
 <h2>Signature Blends</h2>
 <div class="product-grid">
 
@@ -292,7 +296,7 @@ footer img {
 </div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
 <h2>Our Story</h2>
 <p>
 Chai Culture celebrates the ritual of Indian tea through a lens of royalty and warmth.
@@ -300,7 +304,7 @@ Each blend honors tradition while elevating everyday moments into elegant experi
 </p>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
 <h2>Get in Touch</h2>
 <p>Email: hello@chaiculture.com</p>
 <p>Phone: +91 98765 43210</p>
@@ -314,4 +318,5 @@ Each blend honors tradition while elevating everyday moments into elegant experi
 
 </body>
 </html>
+
 
